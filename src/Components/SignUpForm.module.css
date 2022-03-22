@@ -34,6 +34,14 @@ button:hover {
 
 }
 
+.formCard {
+    border-radius: .75rem;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 1.25rem;
+    margin-bottom: 3rem;
+}
+
 .terms {
     font-size: .75rem;
     color: hsl(246, 25%, 77%);
@@ -69,4 +77,13 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .formCard {
+        width: 100%;
+        margin-bottom: 0rem;
+        padding: 2rem 2.5rem;
+
+    }
 }

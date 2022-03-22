@@ -9,5 +9,23 @@ h1 {
     font-size: 1.75rem;
     line-height: 2.25rem;
     margin-bottom: 1.75rem;
+}
 
+@media screen and (min-width: 768px) {
+    .headerBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        padding: 0 2rem 0 4rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .headerBlock p {
+        font-weight: 500;
+    }
 }

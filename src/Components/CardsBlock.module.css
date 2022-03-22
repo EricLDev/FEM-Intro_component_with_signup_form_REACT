@@ -1,0 +1,9 @@
+@media screen and (min-width: 768px) {
+    .cardsBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem 0 2rem;
+    }
+}

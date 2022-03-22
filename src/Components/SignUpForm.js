@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Card from "./ui/Card";
 import classes from "./SignUpForm.module.css";
 import iconError from "../images/icon-error.svg";
 
@@ -27,14 +26,17 @@ const SignUpForm = () => {
 		if (!values.firstName) {
 			errors.firstName = "First Name cannot be empty";
 		}
+
 		if (!values.lastName) {
 			errors.lastName = "Last Name cannot be empty";
 		}
+
 		if (!values.email) {
 			errors.email = "Email cannot be empty";
 		} else if (!emailRegex.test(values.email)) {
 			errors.email = "Looks like this is not an email";
 		}
+
 		if (!values.password) {
 			errors.password = "Password cannot be empty";
 		} else if (values.password.length < 6) {
@@ -42,6 +44,7 @@ const SignUpForm = () => {
 		} else if (values.password.length > 12) {
 			errors.password = "Password cannot exceed 12 characters";
 		}
+
 		return errors;
 	};
 
@@ -58,14 +61,8 @@ const SignUpForm = () => {
 		}
 	}, [errors]);
 
-	const style = {
-		backgroundColor: "white",
-		padding: "1.25rem",
-		marginBottom: "3rem",
-	};
-
 	return (
-		<Card style={style}>
+		<div className={classes.formCard}>
 			<form className={classes.signUpForm} onSubmit={onSubmitHandler}>
 				<div className={classes.inputGroup}>
 					<input type="text" name="firstName" onChange={onChangeHandler} placeholder="First Name" className={`${errors.firstName ? classes.inputError : ""}`} />
@@ -92,7 +89,7 @@ const SignUpForm = () => {
 			<p className={classes.terms}>
 				By clicking the button, you are agreeing to our <span>Terms and Services</span>
 			</p>
-		</Card>
+		</div>
 	);
 };
 
