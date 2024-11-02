@@ -1,7 +1,7 @@
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/signup-component-with-react-manual-validationno-library-gn6kwMgc6]
-- Live Site URL: [https://ericl81.github.io/FEM-Intro_component_with_signup_form_REACT/]
+- Live Site URL: [https://ericldev.github.io/FEM-Intro_component_with_signup_form_REACT/]
 
 # Frontend Mentor - Intro component with sign up form
 
